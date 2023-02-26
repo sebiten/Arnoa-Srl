@@ -16,7 +16,7 @@ const Servicios = () => {
       nombre: "Limpieza de hogares",
       descripcion:
         "Ofrecemos servicios de limpieza para hogares para que puedas disfrutar de tu tiempo libre.",
-      icono: "/espacios-verdes3.jpg",
+      icono: "/Espacios-verdes1.jpg",
     },
     {
       id: 3,
