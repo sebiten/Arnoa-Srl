@@ -27,9 +27,9 @@ const HeroCarousel = () => {
     <>
       <Slider className="relative h-screen w-full" {...settings}>
         {images.map((image, index) => (
-          <div className="relative h-screen w-full" key={index}>
+          <div className="relative h-screen w-screen" key={index}>
             <div className="relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute top-0 left-0 w-screen h-screen bg-black opacity-60"></div>
               <Image
                 width={500}
                 height={500}

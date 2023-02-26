@@ -14,7 +14,7 @@ function Navbar() {
   const menuClasses = isMenuOpen ? "flex" : "hidden";
 
   return (
-    <nav className="bg-blue-700 py-4 opacity-100 sticky z-40 top-0 w-full main-content">
+    <nav className="bg-blue-700 py-4 opacity-95 sticky z-40 top-0 w-full main-content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <motion.div
@@ -22,7 +22,7 @@ function Navbar() {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1 }}
           >
-            <Link href="#" className="font-bold text-white text-xl">
+            <Link href="/" className="font-bold text-white text-xl">
               <Image
                 className="xs:block sm:block hidden"
                 src="/logo_.png"
@@ -68,7 +68,7 @@ function Navbar() {
             >
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="block text-white hover:bg-blue-500  px-3  rounded-md text-sm font-medium"
                 >
                   Inicio
@@ -76,7 +76,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href={"/nosotros"}
                   className="block text-white hover:bg-blue-500 px-3 rounded-md text-sm font-medium"
                 >
                   Nosotros
@@ -85,7 +85,7 @@ function Navbar() {
               <li></li>
               <li>
                 <Link
-                  href="#"
+                  href="#contacto"
                   className="block text-white hover:bg-blue-500 px-3  rounded-md text-sm font-medium"
                 >
                   Contacto

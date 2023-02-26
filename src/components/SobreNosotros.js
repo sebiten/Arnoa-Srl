@@ -62,7 +62,7 @@ function SobreNosotros() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2 }}
         className="w-full mx-auto sm:px-24"
       >
         <h2 className="text-3xl sm:text-4xl my-4 lg:text-5xl font-bold text-gray-900 text-justify ">
