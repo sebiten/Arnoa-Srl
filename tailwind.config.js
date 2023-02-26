@@ -11,18 +11,22 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'xs': '300px',
         'sm': '800px',
         // => @media (min-width: 640px) { ... } 
     
-        'md': '800px',
+        'md': '768px',
         // => @media (min-width: 768px) { ... }
     
-        'lg': '1098px',
+        'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
 
     
-        'xl': '900px',
+        'xl': '1380px',
         // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
       }
     },
   },

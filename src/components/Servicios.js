@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Servicios = () => {
   const servicios = [
@@ -28,8 +29,14 @@ const Servicios = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-20">
-      <div className="w-full mx-auto px-6 sm:px-10 lg:px-16">
+    <section className="xl:w-10/12 mx-auto my-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1 }}
+
+        className="w-full mx-auto px-6 sm:px-10 lg:px-16"
+      >
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
           Nuestros servicios
         </h2>
@@ -67,7 +74,7 @@ const Servicios = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import { images } from "@/Heros/Heros";
+import { motion } from "framer-motion";
+import { FaMailBulk, FaWhatsapp } from "react-icons/fa";
 
 const HeroCarousel = () => {
   const settings = {
@@ -11,7 +13,7 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true,
@@ -23,11 +25,9 @@ const HeroCarousel = () => {
 
   return (
     <>
-      <Slider {...settings}>
+      <Slider className="relative h-screen w-full" {...settings}>
         {images.map((image, index) => (
-          <div 
-            className="relative h-screen w-full"
-          key={index}>
+          <div className="relative h-screen w-full" key={index}>
             <div className="relative">
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
               <Image
@@ -35,27 +35,48 @@ const HeroCarousel = () => {
                 height={500}
                 src={image}
                 alt={`Movie ${index + 1}`}
-                className="object-cover w-full h-full"
+                className="object-cover w-screen h-screen"
               />
             </div>
           </div>
         ))}
       </Slider>
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-6xl font-bold text-center text-white">
-            Bienvenidos a Arnoa
-          </h1>
-          <p className="text-lG font-normal text-center my-4 w-full lg:w-1/2  mx-auto text-white">
-            Mantén tus espacios seguros y protegidos con nuestros servicios de
-            desinfección y limpieza especializados para prevenir la propagación
-            del COVID-19 en Consorcios, Oficinas, Industrias e Instituciones
-            tanto públicas como privadas.
-          </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-            Contactanos Ahora!
-          </button>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <h1 className="text-6xl font-bold text-center text-white">
+          Bienvenidos a Arnoa
+        </h1>
+        <h2 className="text-2xl font-bold text-center text-white">
+          Servicio de limpieza en el norte de Argentina
+        </h2>
+        <p className="text-lG font-normal text-center my-4 w-full lg:w-1/2 mx-auto text-white">
+          En Arnoa, estamos comprometidos con tu seguridad y protección. Por
+          eso, ofrecemos servicios especializados de limpieza y desinfección
+          para prevenir la propagación del COVID-19 en Consorcios, Oficinas,
+          Industrias e Instituciones públicas y privadas en todo el norte
+          argentino.
+        </p>
+        <div className="flex w-auto mx-auto text-center">
+          <Link
+            href="wa.me/5491130000000"
+            className="bg-blue-700 opacity-80 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center"
+          >
+            <FaWhatsapp color="#25D366" size={25} className="mr-2" />
+            Contactanos por Whatsapp
+          </Link>
+          <Link
+            href="wa.me/5491130000000"
+            className="bg-blue-700 opacity-80 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center"
+          >
+            <FaMailBulk color="#25D366" size={25} className="mr-2" />O por Email
+          </Link>
         </div>
-        <Link href="/">
+      </motion.div>
+      <Link href="/">
         <Image
           src="/logo_.png"
           alt="Picture of the author"
@@ -65,7 +86,6 @@ const HeroCarousel = () => {
         />
       </Link>
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-        
         <Link to="scroll-target" smooth={true} duration={1000}>
           <svg
             className="animate-bounce h-10 w-10 text-white hover:text-gray-400"
