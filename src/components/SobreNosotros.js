@@ -32,7 +32,7 @@ function SobreNosotros() {
               alt="Hospital"
               height={500}
               width={500}
-              src="/hospital1.png"
+              src="/2.webp"
               className="object-cover rounded-lg mx-auto xl:w-[700px] md:w-[500px] sm:w-[800px ]  h-[500px]"
             />
           </div>
@@ -41,7 +41,7 @@ function SobreNosotros() {
               alt="Hospital"
               height={500}
               width={500}
-              src="/hospital2.jpg"
+              src="/3.webp"
               className="object-cover rounded-lg mx-auto xl:w-[700px] md:w-[700px] sm:w-[800px] h-[500px] "
             />
           </div>
@@ -51,7 +51,7 @@ function SobreNosotros() {
               alt="Hospital"
               height={500}
               width={500}
-              src="/corporativa4.jpg"
+              src="/1.webp"
               className="object-cover rounded-lg mx-auto xl:w-[700px] md:w-[500px] sm:w-[800px] h-[500px] "
             />
           </div>
@@ -81,7 +81,7 @@ function SobreNosotros() {
         <button className="bg-blue-700 hover:bg-blue-500 hover:transform  text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
           <Link href="/nosotros">Conoce mas sobre nosotros</Link>
         </button>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 2xl:grid-cols-4 xl:pb-12 py-12 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 2xl:grid-cols-4 xl:pb-12 py-8 mt-10 ">
           <div className="flex flex-col items-center justify-center mr-2">
             <Image
               alt="icono"

@@ -6,7 +6,7 @@ function OrdenaTuPresupuesto() {
   return (
     <section
       class="relative bg-cover bg-center py-24 mt-24"
-      style={{ backgroundImage: "url('/Corporativa4.jpg')" }}
+      style={{ backgroundImage: "url('/4.webp')" }}
     >
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <motion.div

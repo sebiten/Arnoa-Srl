@@ -13,7 +13,7 @@ function Contacto() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative rounded-lg overflow-hidden">
             <Image
-              src="/hospital1.png"
+              src="/5.webp"
               alt="Contacto"
               layout="fill"
               objectFit="cover"

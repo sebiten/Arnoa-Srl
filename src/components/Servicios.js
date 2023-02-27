@@ -10,7 +10,7 @@ const Servicios = () => {
       nombre: "Limpieza de oficinas",
       descripcion:
         "Mantenemos tus oficinas limpias y ordenadas para que puedas enfocarte en tu negocio.",
-      icono: "/hospital1.png",
+      icono: "/2.webp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Servicios = () => {
       nombre: "Limpieza de espacios en general",
       descripcion:
         "Dejamos tus ventanas y cristales limpios y relucientes para que puedas disfrutar de las vistas.",
-      icono: "/hospital2.jpg",
+      icono: "/4.webp",
     },
   ];
 
@@ -52,7 +52,7 @@ const Servicios = () => {
                   alt={servicio.nombre}
                   width={400}
                   height={400}
-                  className="w-[700px] h-[500px] object-cover"
+                  className="w-[500px] h-[400px] object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>

@@ -13,11 +13,11 @@ const WorkWithUs = () => {
       className="relative bg-transparent py-20"
     >
       <div
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full bg-blue-800"
         style={{
-          backgroundImage: `url('/corporativa4.jpg')`,
+          backgroundColor: ``,
           backgroundSize: "cover",
-          opacity: 0.5,
+          opacity: 0.3,
         }}
       ></div>
       <div className="relative z-10 container mx-auto px-4">

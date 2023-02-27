@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { images } from "@/Heros/Heros";
+import { images } from "@/Images/Heros";
 import { motion } from "framer-motion";
 import { FaMailBulk, FaWhatsapp } from "react-icons/fa";
 
@@ -13,7 +13,7 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true,
@@ -29,12 +29,12 @@ const HeroCarousel = () => {
         {images.map((image, index) => (
           <div className="relative h-screen w-screen" key={index}>
             <div className="relative">
-              <div className="absolute top-0 left-0 w-screen h-screen bg-black opacity-60"></div>
+              <div className="absolute top-0 left-0 w-screen h-screen bg-black opacity-80"></div>
               <Image
                 width={500}
                 height={500}
                 src={image}
-                alt={`Movie ${index + 1}`}
+                alt={`image ${index + 1}`}
                 className="object-cover w-screen h-screen"
               />
             </div>
@@ -45,34 +45,34 @@ const HeroCarousel = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="absolute inset-0 flex flex-col items-center justify-center"
+        className="absolute inset-0 flex flex-col items-center justify-center mx-4"
       >
-        <h1 className="text-6xl font-bold text-center text-white">
+        <h1 className="text-4xl font-bold text-center text-white xl:text-6xl">
           Bienvenidos a Arnoa
         </h1>
-        <h2 className="text-2xl font-bold text-center text-white">
+        <h2 className="text-lg font-bold text-center text-white xl:text-xg">
           Servicio de limpieza en el norte de Argentina
         </h2>
-        <p className="text-lG font-normal text-center my-4 w-full lg:w-1/2 mx-auto text-white">
+        <p className="text-sm font-normal text-center my-4 w-full lg:w-1/2 mx-auto xl:text-lg text-white">
           En Arnoa, estamos comprometidos con tu seguridad y protección. Por
           eso, ofrecemos servicios especializados de limpieza y desinfección
           para prevenir la propagación del COVID-19 en Consorcios, Oficinas,
           Industrias e Instituciones públicas y privadas en todo el norte
           argentino.
         </p>
-        <div className="flex w-auto mx-auto text-center">
+        <div className="flex mx-auto text-center">
           <Link
             href="wa.me/5491130000000"
-            className="bg-blue-700 opacity-80 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center"
+            className="bg-blue-700 opacity-80 text-white font-bold py-1 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center justify-center"
           >
             <FaWhatsapp color="#25D366" size={25} className="mr-2" />
             Contactanos por Whatsapp
           </Link>
           <Link
             href="wa.me/5491130000000"
-            className="bg-blue-700 opacity-80 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center"
+            className="bg-blue-700 opacity-80 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 ease-in-out flex items-center justify-center xs:hidden sm:flex"
           >
-            <FaMailBulk color="#25D366" size={25} className="mr-2" />O por Email
+            <FaMailBulk color="#25D366" size={25} className="mr-2 " />O por Email
           </Link>
         </div>
       </motion.div>
