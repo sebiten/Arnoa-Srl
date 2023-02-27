@@ -10,21 +10,21 @@ const Servicios = () => {
       nombre: "Limpieza de oficinas",
       descripcion:
         "Mantenemos tus oficinas limpias y ordenadas para que puedas enfocarte en tu negocio.",
-      icono: "/2.webp",
+      icono: "/4.webp",
     },
     {
       id: 2,
       nombre: "Limpieza de hogares",
       descripcion:
         "Ofrecemos servicios de limpieza para hogares para que puedas disfrutar de tu tiempo libre.",
-      icono: "/6.webp",
+      icono: "/3.webp",
     },
     {
       id: 3,
       nombre: "Limpieza de espacios en general",
       descripcion:
         "Dejamos tus ventanas y cristales limpios y relucientes para que puedas disfrutar de las vistas.",
-      icono: "/4.webp",
+      icono: "/5.webp",
     },
   ];
 
@@ -52,7 +52,7 @@ const Servicios = () => {
                   alt={servicio.nombre}
                   width={400}
                   height={400}
-                  className="w-[500px] h-[400px] object-cover"
+                  className="object-cover rounded-lg mx-auto xl:w-[700px] xl:h-[400px] xl:mb-36 h-[300px] w-[700px]"
                 />
               </div>
               <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>
