@@ -29,7 +29,7 @@ function Contacto() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center">
+          <div className="bg-white rounded-lg shadow-xl p-10 flex flex-col justify-center">
             <h3 className="font-bold text-center text-3xl">
               Informacion de contacto
             </h3>
