@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 function Contacto() {
   return (
     <section className="py-20 2xl:w-full mx-auto" id="contacto">
-      <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="max-w-5xl mx-auto sm:px-10">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
           Contáctanos
         </h2>
@@ -37,18 +37,18 @@ function Contacto() {
               <p>Telefono: 123456789</p>
               <p>
                 Correo:
-                <a href="mailto:ventas@arnoa.com">ventas@arnoa.com</a>
+                <a href="mailto:ventas.com">ventas@CleanSide.com</a>
               </p>
               <p>Direccion: Calle falsa 123</p>
               <p>
                 Horarios de atencion: Luneas a Viernes de 09:00hs a 18:00hs{" "}
               </p>
               <button className="bg-blue-700 hover:bg-blue-500 hover:transform  text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
-                <FaMailBulk className='mr-2' color="#25D366" size={25} />
-                <Link href="mailto:ventas@arnoa.com">Contactar por correo</Link>
+                <FaMailBulk className="mr-2" color="#25D366" size={25} />
+                <Link href="mailto:ventas@.com">Contactar por correo</Link>
               </button>
               <button className="bg-blue-700 hover:bg-blue-500 hover:transform  text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
-                <FaWhatsapp className='mr-2' color="#25D366" size={25} />
+                <FaWhatsapp className="mr-2" color="#25D366" size={25} />
                 <Link href="https://wa.me/38755555555">
                   Contactar por Whatsapp
                 </Link>

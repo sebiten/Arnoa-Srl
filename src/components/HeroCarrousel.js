@@ -48,13 +48,13 @@ const HeroCarousel = () => {
         className="absolute inset-0 flex flex-col items-center justify-center mx-4"
       >
         <h1 className="text-4xl font-bold text-center text-white xl:text-6xl">
-          Bienvenidos a Arnoa
+          Bienvenidos a CleanSide
         </h1>
         <h2 className="text-lg font-bold text-center text-white xl:text-xg">
           Servicio de limpieza en el norte de Argentina
         </h2>
         <p className="text-sm font-normal text-center my-4 w-full lg:w-1/2 mx-auto xl:text-lg text-white">
-          En Arnoa, estamos comprometidos con tu seguridad y protección. Por
+          En CleanSide, estamos comprometidos con tu seguridad y protección. Por
           eso, ofrecemos servicios especializados de limpieza y desinfección
           para prevenir la propagación del COVID-19 en Consorcios, Oficinas,
           Industrias e Instituciones públicas y privadas en todo el norte

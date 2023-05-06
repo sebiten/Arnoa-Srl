@@ -27,7 +27,7 @@ const WorkWithUs = () => {
         </div>
         <div className="relative flex items-center justify-center">
           <button className="bg-blue-700 hover:bg-blue-500 hover:transform  text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
-            <Link href="mailto:rrhh@arnoa.com.ar">Enviar correo</Link>
+            <Link href="mailto:rrhh@CleanSide.com.ar">Enviar correo</Link>
             <FaMailBulk size={25} color="#25D366" className="inline ml-2" />
           </button>
         </div>

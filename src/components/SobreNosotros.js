@@ -74,7 +74,7 @@ function SobreNosotros() {
             <FcAbout size={38} className="inline mx-auto ml-1 mb-1" />
           </h2>
           <p className="text-gray-700 text-lg sm:text-xl lg:text-xl text-justify ">
-            En Arnoa llevamos más de 20 años en el mercado, brindando servicios
+            En CleanSide llevamos más de 20 años en el mercado, brindando servicios
             de limpieza y mantenimiento de alta calidad. Nos especializamos en
             ofrecer soluciones personalizadas y adaptadas a las necesidades de
             cada uno de nuestros clientes, con el objetivo de garantizar su
